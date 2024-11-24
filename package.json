@@ -4,9 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ot": "cd ot && browserify client.js -o dist.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "browserify": "^17.0.1",
+    "express": "^4.21.1",
+    "reconnecting-websocket": "^4.4.0",
+    "sharedb": "^5.1.1",
+    "ws": "^8.18.0"
+  }
 }
